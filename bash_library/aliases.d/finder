@@ -1,0 +1,5 @@
+alias finder="open ."
+alias dsstore-find="find . -name '.DS_Store'"
+alias dsstore-delete="find . -name '.DS_Store' -delete"
+
+HELP_ALIASES="finder dsstore-(find|delete)\n$HELP_ALIASES"

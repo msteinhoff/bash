@@ -1,0 +1,3 @@
+APP_SUBLIME="$DEV/Sublime Text 2.app/Contents/SharedSupport"
+ADDPATH="$ADDPATH:$APP_SUBLIME/bin"
+alias nano=subl

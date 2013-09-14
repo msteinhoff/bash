@@ -1,0 +1,6 @@
+# Apache maven
+export APP_MVN="$DEV/Apache-Maven/3.0.5"
+export M2_HOME="$APP_MVN"
+export M2="$M2_HOME/bin"
+export MAVEN_OPTS="-Xms256m -Xmx512m -Dfile.encoding=UTF-8"
+ADDPATH="$ADDPATH:$APP_MVN/bin"

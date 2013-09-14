@@ -1,0 +1,7 @@
+# Global configuration goes here
+
+# Per-file configuration
+for f in ~/.bash_library/languages.d/*;
+do
+    source $f;
+done

@@ -1,0 +1,2 @@
+alias v=vagrant
+alias vagrant-reset="v destroy --force && v up"

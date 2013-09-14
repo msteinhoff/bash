@@ -1,0 +1,6 @@
+ORA_INSTANT="$APPS_USR/Development/oracle-instantclient-11.2"
+
+export DYLD_LIBRARY_PATH=$ORA_INSTANT
+export TNS_ADMIN=$WORK/Personal/oracle/tns
+
+ADDPATH="$ADDPATH:$ORA_INSTANT"

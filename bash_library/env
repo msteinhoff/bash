@@ -1,0 +1,13 @@
+export APPS_SYS="/Applications"
+export APPS_USR="$HOME/Applications"
+export DEV="$APPS_USR/Development"
+export WORK="$HOME/Work"
+export PROJECTS="$WORK/Projects"
+export RAMDISK="$WORK/RAMDisk"
+export DOTFILES="$WORK/Personal/dotfiles"
+export SCRIPTS="$WORK/Personal/scripts"
+
+ADDPATH="$ADDPATH:$SCRIPTS"
+
+alias scripts="cd $SCRIPTS"
+alias dotfiles="cd $DOTFILES"

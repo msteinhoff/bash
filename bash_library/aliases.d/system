@@ -1,0 +1,6 @@
+alias dr="defaults read"
+alias flush-dns="dscacheutil -flushcache"
+alias rebuild-ls="/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user"
+alias refresh-mcx="sudo mcxrefresh -n $USER"
+
+HELP_ALIASES="dr flush-dns rebuild-ls refresh-mcx\n$HELP_ALIASES"

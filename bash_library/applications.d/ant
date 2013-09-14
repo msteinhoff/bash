@@ -1,0 +1,6 @@
+# Apache ant
+export APP_ANT="$DEV/Apache-Ant/1.8.1"
+export ANT_HOME="$APP_ANT"
+export ANT_OPTS="-Xmx512M -XX:MaxPermSize=256m -Dfile.encoding=UTF-8"
+ADDPATH="$ADDPATH:$APP_ANT/bin"
+complete -C $APP_ANT/bin/complete-ant-cmd.pl ant

@@ -1,0 +1,4 @@
+# JaWE
+export APP_JAWE="$DEV/JaWE/3.3.1"
+export JaWE_HOME=$APP_JAWE
+export JaWE_OPTS="-Xmx1024M"
