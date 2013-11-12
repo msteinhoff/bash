@@ -1,1 +1,2 @@
 export PATH="$DEV/Packer/0.3.10:$PATH"
+export PACKER_CACHE_DIR="$HOME/.packer_cache"
