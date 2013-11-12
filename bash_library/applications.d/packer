@@ -1,1 +1,1 @@
-export PATH="$DEV/Packer/0.3.6:$PATH"
+export PATH="$DEV/Packer/0.3.10:$PATH"
