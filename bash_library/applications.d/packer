@@ -1,1 +1,1 @@
-ADDPATH="$ADDPATH:$DEV/Packer/0.3.6"
+export PATH="$DEV/Packer/0.3.6:$PATH"

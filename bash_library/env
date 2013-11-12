@@ -7,7 +7,7 @@ export RAMDISK="$WORK/RAMDisk"
 export DOTFILES="$WORK/Personal/dotfiles"
 export SCRIPTS="$WORK/Personal/scripts"
 
-ADDPATH="$ADDPATH:$SCRIPTS"
-
 alias scripts="cd $SCRIPTS"
 alias dotfiles="cd $DOTFILES"
+
+export PATH="$SCRIPTS:$PATH"

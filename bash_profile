@@ -1,5 +1,3 @@
-ADDPATH=""
-
 echo "--------------------------------------------------------------------------------"
 echo "I don't usually use the terminal. But when I do, I feel like god."
 echo ""
@@ -13,4 +11,4 @@ echo ""
 echo ""
 echo "--------------------------------------------------------------------------------"
 
-export PATH=/usr/local/sbin:/usr/local/bin:$ADDPATH:$PATH
+export PATH=/usr/local/sbin:/usr/local/bin:$PATH
