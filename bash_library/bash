@@ -1,3 +1,6 @@
+# ------------------------------------------------------------------------------
+# bash - setup bash configuration
+# ------------------------------------------------------------------------------
 # Fancy bash coloring
 export TERM=xterm-color
 export CLICOLOR=true

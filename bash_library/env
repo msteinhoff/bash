@@ -1,6 +1,15 @@
+# ------------------------------------------------------------------------------
+# env - add some environment variables for common directories
+#
+# Use both variables and aliases here:
+# aliases for quick navigation, variables for other scripts
+# ------------------------------------------------------------------------------
+# ~/Applications
 export APPS_SYS="/Applications"
 export APPS_USR="$HOME/Applications"
 export DEV="$APPS_USR/Development"
+
+# ~/Work
 export WORK="$HOME/Work"
 export PROJECTS="$WORK/Projects"
 export RAMDISK="$WORK/RAMDisk"
