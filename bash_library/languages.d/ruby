@@ -6,3 +6,7 @@
 #export GEM_HOME
 #ADDPATH="$ADDPATH:$GEM_HOME/bin"
 #ADDPATH="$ADDPATH:$GEM_HOME/ruby/1.8/bin"
+
+# rbenv
+#export PATH="$HOME/.rbenv/bin:$PATH"
+#eval "$(rbenv init -)"
