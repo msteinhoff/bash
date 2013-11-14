@@ -1,2 +1,8 @@
 # SSH known hosts completition for added awesomeness
 complete -W "$(echo `cat ~/.ssh/known_hosts | cut -f 1 -d ' ' | sed -e s/,.*//g | uniq | grep -v "\["`;)" ssh
+
+# because it sucks to type ~/.ssh/
+export SSH=~/.ssh/
+
+alias edit-ssh-config='nano $SSH/config'
+alias edit-known-hosts='nano $SSH/known_hosts'
