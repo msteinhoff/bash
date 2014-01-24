@@ -14,6 +14,10 @@ export HISTTIMEFORMAT='%F %T '
 # No duplicates in history
 export HISTCONTROL=ignoredups
 
+# Larger bash history (default is 500)
+export HISTFILESIZE=10000
+export HISTSIZE=10000
+
 # Multi-terminal history
 # See http://briancarper.net/blog/248/
 shopt -s histappend
