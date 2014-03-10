@@ -19,5 +19,6 @@ export SCRIPTS="$WORK/Personal/scripts"
 alias scripts="cd $SCRIPTS"
 alias dotfiles="cd $DOTFILES"
 alias projects="cd $PROJECTS"
+alias github="cd $PROJECTS/github"
 
 export PATH="$SCRIPTS:$PATH"
