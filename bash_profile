@@ -1,3 +1,6 @@
+NOBANNER=${NOBANNER:-false}
+if [ "$NOBANNER" = "false" ]
+then
 echo "--------------------------------------------------------------------------------"
 echo "I don't usually use the terminal. But when I do, I feel like god."
 echo ""
@@ -10,8 +13,9 @@ echo ""
 echo ""
 echo "To edit profile/library: edit-bash"
 echo "--------------------------------------------------------------------------------"
+fi
 
 export PATH=/usr/local/sbin:/usr/local/bin:$PATH
 
 alias edit-bash="subl -n ~/Work/Personal/bash"
-alias reload="source ~/.bash_profile"
+alias reload="NOBANNER=true source ~/.bash_profile"
