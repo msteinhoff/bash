@@ -1,11 +1,9 @@
 # RVM
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+#[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
 # Local ruby gems (replaced by RVM)
-#GEM_HOME="$HOME/.gem"
-#export GEM_HOME
-#ADDPATH="$ADDPATH:$GEM_HOME/bin"
-#ADDPATH="$ADDPATH:$GEM_HOME/ruby/1.8/bin"
+export GEM_HOME="$HOME/.gem"
+export PATH="$GEM_HOME/bin:$GEM_HOME/ruby/1.8/bin:$PATH"
 
 # rbenv
 #export PATH="$HOME/.rbenv/bin:$PATH"
