@@ -10,6 +10,7 @@ echo ""
 . ~/.bash_library/applications
 . ~/.bash_library/aliases
 . ~/.bash_library/projects
+. $SCRIPTS/z.sh
 echo ""
 echo "To edit profile/library: edit-bash"
 echo "--------------------------------------------------------------------------------"
