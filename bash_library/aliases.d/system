@@ -13,6 +13,10 @@ alias start-bind="sudo launchctl load /System/Library/LaunchDaemons/org.isc.name
 alias stop-bind="sudo launchctl unload /System/Library/LaunchDaemons/org.isc.named.plist"
 alias restart-bind="stop-bind; start-bind;"
 
+alias start-dnsmasq="sudo launchctl load /Library/LaunchDaemons/homebrew.mxcl.dnsmasq.plist"
+alias stop-dnsmasq="sudo launchctl unload /Library/LaunchDaemons/homebrew.mxcl.dnsmasq.plist"
+alias restart-dnsmasq="stop-dnsmasq; start-dnsmasq;"
+
 #alias flush-dns="sudo dscacheutil -flushcache"
 alias flush-dns="sudo killall -HUP mDNSResponder"
 alias query-dns="dscacheutil -q host -a name"
