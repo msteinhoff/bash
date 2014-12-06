@@ -1,6 +1,3 @@
 APP_SUBLIME="$DEV/Sublime Text 2.app/Contents/SharedSupport"
 
 PATH="$APP_SUBLIME/bin:$PATH"
-
-alias nano="subl -n"
-alias edit="subl -n"

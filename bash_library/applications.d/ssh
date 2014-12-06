@@ -6,5 +6,5 @@ fi
 # because it sucks to type ~/.ssh/
 export SSH=~/.ssh/
 
-alias edit-ssh-config='nano $SSH/config'
-alias edit-known-hosts='nano $SSH/known_hosts'
+alias edit-ssh-config='$EDIT $SSH/config'
+alias edit-known-hosts='$EDIT $SSH/known_hosts'
