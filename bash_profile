@@ -20,3 +20,4 @@ export PATH=/usr/local/sbin:/usr/local/bin:~/Library/Scripts:$PATH
 
 alias edit-bash="subl -n ~/Work/Personal/bash"
 alias reload="NOBANNER=true source ~/.bash_profile"
+ulimit -n 4096
