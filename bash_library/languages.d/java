@@ -1,5 +1,1 @@
-swjv() {
-    export JAVA_HOME=`/usr/libexec/java_home -v $1`
-}
-alias switchjava=swjv
-swjv 1.6
+if which jenv > /dev/null; then eval "$(jenv init -)"; fi
