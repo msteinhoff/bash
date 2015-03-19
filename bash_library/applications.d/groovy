@@ -1,0 +1,2 @@
+export GROOVY_HOME="$DEV/groovy-2.3.9"
+export PATH="$GROOVY_HOME/bin:$PATH"
