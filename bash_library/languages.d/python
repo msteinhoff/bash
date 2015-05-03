@@ -1,11 +1,9 @@
-# TODO use virtualenv
-# Using homebrewed python now
+if which pyenv > /dev/null;
+then
+    eval "$(pyenv init -)";
 
-#PYTHONPATH="/Library/Python/2.6/site-packages/gdata-2.0.14-py2.6.egg"
-#PYTHONPATH="$PYTHONPATH:/Library/Python/2.6/site-packages/SQLAlchemy-0.7.1-py2.6.egg"
-#PYTHONPATH="$PYTHONPATH:/Library/Python/2.6/site-packages/web.py-0.36-py2.7.egg"
-#ADDPATH="$ADDPATH:/Library/Frameworks/Python.framework/Versions/2.7/bin"
-
-PYTHONPATH="$(brew --prefix)/lib/python2.7/site-packages"
-#PYTHONPATH="$(brew --prefix)/lib/python3.4/site-packages"
-export PYTHONPATH
+    if which pyenv-virtualenv-init > /dev/null;
+    then
+        eval "$(pyenv virtualenv-init -)";
+    fi
+fi
