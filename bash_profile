@@ -16,9 +16,10 @@ echo "To edit profile/library: edit-bash"
 echo "--------------------------------------------------------------------------------"
 fi
 
+export BASHY=~/Work/Personal/bash
 export PATH=/usr/local/sbin:/usr/local/bin:~/Library/Scripts:$PATH
 export EDIT="subl -n"
 
-alias edit-bash="$EDIT ~/Work/Personal/bash"
+alias edit-bash="$EDIT $BASHY"
 alias reload="NOBANNER=true source ~/.bash_profile"
 ulimit -n 4096
