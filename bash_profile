@@ -23,3 +23,8 @@ export EDIT="subl -n"
 alias edit-bash="$EDIT $BASHY"
 alias reload="NOBANNER=true source ~/.bash_profile"
 ulimit -n 4096
+
+add-application() {
+    touch $BASHY/bash_library/applications.d/$1
+    subl -n -a $BASHY $BASHY/bash_library/applications.d/$1
+}
