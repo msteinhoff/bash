@@ -1,7 +1,3 @@
-# Apache maven
-APP_MVN="$DEV/Apache-Maven/3.0.5"
-
-export M2_HOME="$APP_MVN"
-export M2="$APP_MVN/bin"
-export MAVEN_OPTS="-Xms256m -Xmx512m -Dfile.encoding=UTF-8"
-export PATH="$APP_MVN/bin:$PATH"
+# maven is managed by homebrew under /usr/local/bin
+# TODO use project specific config?
+export MAVEN_OPTS="-Xms256m -Xmx512m"

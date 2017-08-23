@@ -1,5 +1,2 @@
-# gradle
-APP_GRADLE="$DEV/gradle-1.11"
-
+# gradle is managed by homebrew under /usr/local/bin
 export GRADLE_OPTS=""
-export PATH="$APP_GRADLE/bin:$PATH"

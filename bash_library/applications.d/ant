@@ -1,6 +1,6 @@
-APP_ANT="$DEV/Apache-Ant/1.8.1"
-complete -C $APP_ANT/bin/complete-ant-cmd.pl ant
+# ant is managed by homebrew under /usr/local/bin
+ANT_APP=$(brew --cellar ant)/1.9.7
 
-export ANT_HOME="$APP_ANT"
+complete -C $ANT_APP/complete-ant-cmd.pl ant
+export ANT_HOME=$ANT_APP/libexec
 export ANT_OPTS="-Xmx512M -XX:MaxPermSize=256m"
-export PATH="$APP_ANT/bin:$PATH"
