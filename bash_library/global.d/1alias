@@ -1,5 +1,6 @@
+alias ll="ls -alh"
+alias ncat="cat -n"
 alias grep-source="grep -nr -I --exclude-dir='(CVS|\.svn|\.git)'"
-
 alias youngest='echo $(ls -tr | tail -1)' 
 alias less-youngest='less $(youngest)' 
 alias tail-youngest='tail -f $(youngest)'
@@ -10,4 +11,5 @@ sandbox()
     cd $WORK/Sandbox/$1
 }
 
+HELP_ALIASES="ll ncat\n$HELP_ALIASES"
 HELP_ALIASES="grep-source youengest less-youngest tail-yougenst\n$HELP_ALIASES"

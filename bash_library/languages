@@ -1,4 +1,0 @@
-for f in $BASHY/bash_library/languages.d/*;
-do
-    source $f;
-done

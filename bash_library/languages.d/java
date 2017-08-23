@@ -1,4 +1,4 @@
-if which jenv > /dev/null;
+if which jenv > /dev/null 2>&1;
 then
     eval "$(jenv init -)";
 fi

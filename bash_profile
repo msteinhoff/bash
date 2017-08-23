@@ -1,20 +1,44 @@
-export BASHY=~/Work/Projects/msteinhoff/bash
-export BASHPROJECTS=~/Work/Projects/msteinhoff/bash-projects
-
 export EDIT="subl -n"
+
+export BASHY=$HOME/Work/Projects/msteinhoff/bash
+export BASHPROJECTS=$HOME/Work/Projects/msteinhoff/bash-projects
+export WORK="$HOME/Work"
+export PROJECTS="$WORK/Projects"
+export DOTFILES="$WORK/Projects/msteinhoff/dotfiles"
+export SCRIPTS="$WORK/Projects/msteinhoff/scripts"
 
 NOBANNER=${NOBANNER:-false}
 [ "$NOBANNER" = "false" ] && echo "--------------------------------------------------------------------------------"
 [ "$NOBANNER" = "false" ] && echo "I don't usually use the terminal. But when I do, I feel like god."
 [ "$NOBANNER" = "false" ] && echo ""
-. $BASHY/bash_library/bash
-. $BASHY/bash_library/env
-. $BASHY/bash_library/languages
-. $BASHY/bash_library/applications
-. $BASHY/bash_library/aliases
-. $BASHY/bash_library/projects
-[ "$NOBANNER" = "false" ] && echo ""
-[ "$NOBANNER" = "false" ] && echo "To edit profile/library: edit-bash"
+
+for section in global.d applications.d languages.d;
+do
+    for file in $(find ${BASHY}/bash_library/${section} -maxdepth 1 -type f);
+        do source ${file};
+    done
+
+    if [ -d "${BASHY}/bash_library/${section}/${HOSTNAME}.host" ];
+    then
+        for file in ${BASHY}/bash_library/${section}/${HOSTNAME}.host/*;
+        do
+            source ${file};
+        done
+    fi
+done
+
+if [ ! -z "$BASHPROJECTS" ];
+then
+    for f in $BASHPROJECTS/*;
+    do
+        source $f;
+    done
+fi
+
+[ "$NOBANNER" = "false" ] && echo "Aliases:"
+[ "$NOBANNER" = "false" ] && echo -e "$HELP_ALIASES"
+[ "$NOBANNER" = "false" ] && echo "Projects:"
+[ "$NOBANNER" = "false" ] && echo "$HELP_PROJECTS"
 [ "$NOBANNER" = "false" ] && echo "--------------------------------------------------------------------------------"
 
 export PATH="$SCRIPTS:$PATH"
@@ -22,5 +46,9 @@ export PATH="$SCRIPTS:$PATH"
 alias cd-bash="cd $BASHY"
 alias edit-bash="$EDIT $BASHY"
 alias edit-bash-projects="$EDIT $BASHPROJECTS"
-alias reload="NOBANNER=true source ~/.bash_profile"
-ulimit -n 4096
+alias reload="NOBANNER=true source $BASHY/bash_profile"
+
+add-application() {
+    touch $BASHY/bash_library/applications.d/$1
+    subl -n -a $BASHY $BASHY/bash_library/applications.d/$1
+}

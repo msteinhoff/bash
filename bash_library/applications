@@ -1,9 +1,0 @@
-add-application() {
-    touch $BASHY/bash_library/applications.d/$1
-    subl -n -a $BASHY $BASHY/bash_library/applications.d/$1
-}
-
-for f in $BASHY/bash_library/applications.d/*;
-do
-    source $f;
-done

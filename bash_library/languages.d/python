@@ -1,8 +1,8 @@
-if which pyenv > /dev/null;
+if which pyenv > /dev/null 2>&1;
 then
     eval "$(pyenv init -)";
 
-    if which pyenv-virtualenv-init > /dev/null;
+    if which pyenv-virtualenv-init > /dev/null 2>&1;
     then
         eval "$(pyenv virtualenv-init -)";
     fi

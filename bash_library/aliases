@@ -1,7 +1,0 @@
-for f in $BASHY/bash_library/aliases.d/*;
-do
-    source $f;
-done
-
-[ "$NOBANNER" = "false" ] && echo "Aliases:"
-[ "$NOBANNER" = "false" ] && echo -e "$HELP_ALIASES"
