@@ -1,4 +1,0 @@
-# Tomcat
-APP_TOMCAT="$DEV/Apache-Tomcat/6.0.37"
-
-export PATH="$APP_TOMCAT/bin:$PATH"

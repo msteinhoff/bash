@@ -1,3 +1,0 @@
-alias cdvmware="cd '/Applications/VMware Fusion.app/Contents/Library'"
-
-HELP_ALIASES="cdvmware\n$HELP_ALIASES"

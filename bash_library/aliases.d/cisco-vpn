@@ -1,4 +1,0 @@
-alias start-cisco="sudo kextload /System/Library/Extensions/CiscoVPN.kext"
-
-
-HELP_ALIASES="start-cisco\n$HELP_ALIASES"

@@ -1,1 +1,0 @@
-alias start-elasticsearch="$DEV/elasticsearch-1.1.0/bin/elasticsearch"
