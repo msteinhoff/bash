@@ -14,10 +14,6 @@ NOBANNER=${NOBANNER:-false}
 
 for section in global.d applications.d languages.d;
 do
-    for file in $(find ${BASHY}/bash_library/${section} -maxdepth 1 -type f);
-        do source ${file};
-    done
-
     if [ -d "${BASHY}/bash_library/${section}/${HOSTNAME}.host" ];
     then
         for file in ${BASHY}/bash_library/${section}/${HOSTNAME}.host/*;
@@ -25,6 +21,10 @@ do
             source ${file};
         done
     fi
+
+    for file in $(find ${BASHY}/bash_library/${section} -maxdepth 1 -type f);
+        do source ${file};
+    done
 done
 
 if [ -d "$BASHPROJECTS" ];
