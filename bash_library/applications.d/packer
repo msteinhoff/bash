@@ -1,2 +1,1 @@
-export PATH="$DEV/Packer/0.6.0_darwin_amd64:$PATH"
-export PACKER_CACHE_DIR="$HOME/.packer_cache"
+export PACKER_CACHE_DIR="${HOME}/.packer_cache"

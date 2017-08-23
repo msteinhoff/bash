@@ -1,5 +1,4 @@
-alias v=vagrant
 alias vagrant-reset="v destroy --force && v up"
-alias clear-vagrant-cache="rm -rf ~/.vagrant.d/boxes/*"
+alias vagrant-clear-cache="rm -rf ~/.vagrant.d/boxes/*"
 
 export VAGRANT_VMWARE_CLONE_DIRECTORY="/Users/Shared/Vagrant"

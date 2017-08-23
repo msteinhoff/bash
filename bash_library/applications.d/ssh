@@ -8,3 +8,4 @@ export SSH=~/.ssh/
 
 alias edit-ssh-config='$EDIT $SSH/config'
 alias edit-known-hosts='$EDIT $SSH/known_hosts'
+alias ssh-hosts="grep 'Host ' ~/.ssh/config | grep -v '*' | cut -d ' ' -f 2 | sort -u"

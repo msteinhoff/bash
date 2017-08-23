@@ -7,3 +7,7 @@ then
         eval "$(pyenv virtualenv-init -)";
     fi
 fi
+
+export PYENV_VIRTUALENV_DISABLE_PROMPT=1
+
+alias pip-clear='pip freeze | xargs pip uninstall -y'

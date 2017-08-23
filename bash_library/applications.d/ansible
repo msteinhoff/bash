@@ -1,1 +1,2 @@
 export ANSIBLE_NOCOWS=1
+export ANSIBLE_SCP_IF_SSH=1
