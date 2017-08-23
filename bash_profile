@@ -1,7 +1,7 @@
-export EDIT="subl -n"
+[ -d "$BASHY" ] || exit 1
+[ -d "$BASHPROJECTS" ] || exit 1
 
-export BASHY=$HOME/Work/Projects/msteinhoff/bash
-export BASHPROJECTS=$HOME/Work/Projects/msteinhoff/bash-projects
+export EDIT="subl -n"
 export WORK="$HOME/Work"
 export PROJECTS="$WORK/Projects"
 export DOTFILES="$WORK/Projects/msteinhoff/dotfiles"
@@ -27,7 +27,7 @@ do
     fi
 done
 
-if [ ! -z "$BASHPROJECTS" ];
+if [ -d "$BASHPROJECTS" ];
 then
     for f in $BASHPROJECTS/*;
     do
