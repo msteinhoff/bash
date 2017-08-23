@@ -3,3 +3,11 @@ alias grep-source="grep -nr -I --exclude-dir='(CVS|\.svn|\.git)'"
 alias youngest='echo $(ls -tr | tail -1)' 
 alias less-youngest='less $(youngest)' 
 alias tail-youngest='tail -f $(youngest)'
+alias find-git-dirs='find . -type d -name .git'
+
+sandbox()
+{
+    cd $WORK/Sandbox/$1
+}
+
+HELP_ALIASES="grep-source youengest less-youngest tail-yougenst\n$HELP_ALIASES"
