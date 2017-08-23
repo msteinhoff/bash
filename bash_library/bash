@@ -1,7 +1,7 @@
 # ------------------------------------------------------------------------------
-# bash - setup bash configuration
+# bash - bash configuration
 # ------------------------------------------------------------------------------
-# Fancy bash coloring
+# Fancy coloring
 export TERM=xterm-color
 export CLICOLOR=true
 export LSCOLORS=ExGxFxdxCxDxDxBxBxExEx
@@ -15,9 +15,11 @@ export HISTTIMEFORMAT='%F %T '
 # No duplicates in history
 export HISTCONTROL=ignoredups
 
-# Larger bash history (default is 500)
+# Larger history (default is 500)
 export HISTFILESIZE=10000
 export HISTSIZE=10000
+
+export HISTIGNORE="&:[ ]*:exit:ls:ll:bg:fg:history:clear"
 
 # Multi-terminal history
 # See http://briancarper.net/blog/248/

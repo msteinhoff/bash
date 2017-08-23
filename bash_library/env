@@ -4,21 +4,10 @@
 # Use both variables and aliases here:
 # aliases for quick navigation, variables for other scripts
 # ------------------------------------------------------------------------------
-# ~/Applications
-export APPS_SYS="/Applications"
-export APPS_USR="$HOME/Applications"
-export DEV="$APPS_USR/Development"
-
 # ~/Work
 export WORK="$HOME/Work"
 export PROJECTS="$WORK/Projects"
-export RAMDISK="$WORK/RAMDisk"
-export DOTFILES="$WORK/Personal/dotfiles"
-export SCRIPTS="$WORK/Personal/scripts"
+export DOTFILES="$WORK/Projects/msteinhoff/dotfiles"
+export SCRIPTS="$WORK/Projects/msteinhoff/scripts"
 
-alias scripts="cd $SCRIPTS"
-alias dotfiles="cd $DOTFILES"
 alias projects="cd $PROJECTS"
-alias github="cd $PROJECTS/github"
-
-export PATH="$SCRIPTS:$PATH"

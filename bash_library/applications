@@ -1,12 +1,9 @@
-#-------------------------------------------------------------------------------
-# Global configuration goes here
-#-------------------------------------------------------------------------------
+add-application() {
+    touch $BASHY/bash_library/applications.d/$1
+    subl -n -a $BASHY $BASHY/bash_library/applications.d/$1
+}
 
-
-#-------------------------------------------------------------------------------
-# Per-file configuration
-#-------------------------------------------------------------------------------
-for f in ~/.bash_library/applications.d/*;
+for f in $BASHY/bash_library/applications.d/*;
 do
     source $f;
 done
