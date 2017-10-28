@@ -1,5 +1,4 @@
-[ -d "$BASHY" ] || exit 1
-[ -d "$BASHPROJECTS" ] || exit 1
+[ -d "$BASHY" ] || exit
 
 export EDIT="subl -n"
 export WORK="$HOME/Work"
@@ -27,13 +26,6 @@ do
     done
 done
 
-if [ -d "$BASHPROJECTS" ];
-then
-    for f in $BASHPROJECTS/*;
-    do
-        source $f;
-    done
-fi
 
 [ "$NOBANNER" = "false" ] && echo "Aliases:"
 [ "$NOBANNER" = "false" ] && echo -e "$HELP_ALIASES"
