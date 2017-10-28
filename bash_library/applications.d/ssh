@@ -5,3 +5,4 @@ fi
 
 alias edit-ssh='$EDIT $SSH'
 alias ssh-hosts="grep 'Host ' ~/.ssh/config | grep -v '*' | cut -d ' ' -f 2 | sort -u"
+alias clear-known-hosts="echo "" > ~/.ssh/known_hosts"
