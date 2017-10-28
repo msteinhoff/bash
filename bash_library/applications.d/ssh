@@ -3,9 +3,5 @@ if [[ -e ~/.ssh/known_hosts ]]; then
   complete -o default -W "$(cat ~/.ssh/known_hosts | sed 's/[, ].*//' | sort | uniq | grep -v '[0-9]')" ssh scp sftp
 fi
 
-# because it sucks to type ~/.ssh/
-export SSH=~/.ssh/
-
-alias edit-ssh-config='$EDIT $SSH/config'
-alias edit-known-hosts='$EDIT $SSH/known_hosts'
+alias edit-ssh='$EDIT $SSH'
 alias ssh-hosts="grep 'Host ' ~/.ssh/config | grep -v '*' | cut -d ' ' -f 2 | sort -u"
