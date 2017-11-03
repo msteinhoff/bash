@@ -4,19 +4,14 @@ VISUAL="subl -n"
 EDITOR="$VISUAL"
 
 
-for section in global.d applications.d languages.d;
-do
-    if [ -d "${BASHY}/bash_library/${section}/${HOSTNAME}.host" ];
-    then
-        for file in ${BASHY}/bash_library/${section}/${HOSTNAME}.host/*;
-        do
-            source ${file};
-        done
-    fi
+HOST_PATTERNS=(${BASHY}/bash_library/{global.d,applications.d,languages.d}/${HOSTNAME}.host)
+GLOBAL_PATTERNS=(${BASHY}/bash_library/{global.d,applications.d,languages.d})
+HOST_FILES=$(find ${HOST_PATTERNS[@]} -maxdepth 1 -type f 2>/dev/null)
+GLOBAL_FILES=$(find ${GLOBAL_PATTERNS[@]} -maxdepth 1 -type f 2>/dev/null)
 
-    for file in $(find ${BASHY}/bash_library/${section} -maxdepth 1 -type f);
-        do source ${file};
-    done
+for FILE in ${HOST_FILES} ${GLOBAL_FILES};
+do
+    source ${FILE};
 done
 
 
