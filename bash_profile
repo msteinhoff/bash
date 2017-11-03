@@ -15,9 +15,9 @@ do
 done
 
 
+alias cd-bashy="cd $BASHY"
+alias edit-bashy="$EDITOR $BASHY"
+alias reload-bashy="source $BASHY/bash_profile"
 
-alias cd-bash="cd $BASHY"
-alias edit-bash="$EDIT $BASHY"
-alias reload="NOBANNER=true source $BASHY/bash_profile"
 export VISUAL
 export EDITOR
