@@ -3,6 +3,14 @@
 VISUAL="subl -n"
 EDITOR="$VISUAL"
 
+pathmunge() {
+    case ":${PATH}:" in
+        *:"$1":*)
+            ;;
+        *)
+            PATH=$1:$PATH
+    esac
+}
 
 HOST_PATTERNS=(${BASHY}/bash_library/{global.d,applications.d,languages.d}/${HOSTNAME}.host)
 GLOBAL_PATTERNS=(${BASHY}/bash_library/{global.d,applications.d,languages.d})
@@ -14,6 +22,7 @@ do
     source ${FILE};
 done
 
+unset -f pathmunge
 
 alias cd-bashy="cd $BASHY"
 alias edit-bashy="$EDITOR $BASHY"
@@ -21,3 +30,4 @@ alias reload-bashy="source $BASHY/bash_profile"
 
 export VISUAL
 export EDITOR
+export PATH
