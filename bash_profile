@@ -1,6 +1,7 @@
 [ -d "$BASHY" ] || exit
 
-export EDIT="subl -n"
+VISUAL="subl -n"
+EDITOR="$VISUAL"
 
 
 for section in global.d applications.d languages.d;
@@ -30,3 +31,5 @@ add-application() {
     touch $BASHY/bash_library/applications.d/$1
     subl -n -a $BASHY $BASHY/bash_library/applications.d/$1
 }
+export VISUAL
+export EDITOR
