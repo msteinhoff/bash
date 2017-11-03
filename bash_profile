@@ -18,7 +18,6 @@ done
 
 alias cd-bash="cd $BASHY"
 alias edit-bash="$EDIT $BASHY"
-alias edit-bash-projects="$EDIT $BASHPROJECTS"
 alias reload="NOBANNER=true source $BASHY/bash_profile"
 
 add-application() {
