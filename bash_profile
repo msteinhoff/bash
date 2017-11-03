@@ -19,10 +19,5 @@ done
 alias cd-bash="cd $BASHY"
 alias edit-bash="$EDIT $BASHY"
 alias reload="NOBANNER=true source $BASHY/bash_profile"
-
-add-application() {
-    touch $BASHY/bash_library/applications.d/$1
-    subl -n -a $BASHY $BASHY/bash_library/applications.d/$1
-}
 export VISUAL
 export EDITOR
