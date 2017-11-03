@@ -1,15 +1,7 @@
 [ -d "$BASHY" ] || exit
 
 export EDIT="subl -n"
-export WORK="$HOME/Work"
-export PROJECTS="$WORK/Projects"
-export DOTFILES="$WORK/Projects/msteinhoff/dotfiles"
-export SCRIPTS="$WORK/Projects/msteinhoff/scripts"
 
-NOBANNER=${NOBANNER:-false}
-[ "$NOBANNER" = "false" ] && echo "--------------------------------------------------------------------------------"
-[ "$NOBANNER" = "false" ] && echo "I don't usually use the terminal. But when I do, I feel like god."
-[ "$NOBANNER" = "false" ] && echo ""
 
 for section in global.d applications.d languages.d;
 do
@@ -26,12 +18,6 @@ do
     done
 done
 
-
-[ "$NOBANNER" = "false" ] && echo "Aliases:"
-[ "$NOBANNER" = "false" ] && echo -e "$HELP_ALIASES"
-[ "$NOBANNER" = "false" ] && echo "Projects:"
-[ "$NOBANNER" = "false" ] && echo "$HELP_PROJECTS"
-[ "$NOBANNER" = "false" ] && echo "--------------------------------------------------------------------------------"
 
 export PATH="$SCRIPTS:$PATH"
 

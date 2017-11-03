@@ -11,5 +11,3 @@ sandbox()
     cd $WORK/Sandbox/$1
 }
 
-HELP_ALIASES="ll ncat\n$HELP_ALIASES"
-HELP_ALIASES="grep-source youengest less-youngest tail-yougenst\n$HELP_ALIASES"
