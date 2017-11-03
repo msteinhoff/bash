@@ -1,0 +1,4 @@
+if [ -f ~/.enhancd/init.sh ];
+then
+    . ~/.enhancd/init.sh
+fi
