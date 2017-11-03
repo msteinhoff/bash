@@ -15,7 +15,6 @@ do
 done
 
 
-export PATH="$SCRIPTS:$PATH"
 
 alias cd-bash="cd $BASHY"
 alias edit-bash="$EDIT $BASHY"
