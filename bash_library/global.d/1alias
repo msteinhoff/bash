@@ -1,9 +1,11 @@
 alias ll="ls -alh"
-alias ncat="cat -n"
-alias grep-source="grep -nr -I --exclude-dir='(CVS|\.svn|\.git)'"
 alias youngest='echo $(ls -tr | tail -1)' 
 alias less-youngest='less $(youngest)' 
 alias tail-youngest='tail -f $(youngest)'
+alias flatten-current-dir='find . -mindepth 2 -type f -exec mv -t . -i '{}' +'
+
+alias catlines="cat -n"
+alias grep-source="grep -nr -I --exclude-dir='(CVS|\.svn|\.git)'"
 alias find-git-dirs='find . -type d -name .git'
 
 sandbox()
@@ -11,3 +13,6 @@ sandbox()
     cd $WORK/Sandbox/$1
 }
 
+calc-sha256sum() {
+    sha256sum $1 > $1.sha256
+}
