@@ -1,4 +1,4 @@
 if [ -f ~/.enhancd/init.sh ];
 then
-    . ~/.enhancd/init.sh
+    source ~/.enhancd/init.sh
 fi
