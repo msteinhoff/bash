@@ -26,12 +26,11 @@ then
 
     alias cd-bashy="cd $BASHY"
     alias edit-bashy="$EDITOR $BASHY"
-    alias reload-bashy="source $BASHY/bash_profile"
     source "${BASHY}/bash_library/aliases"
 
     export VISUAL
     export EDITOR
     export PATH
 else
-    echo "Failed to load bashy: BASHY environment variable is not set"
+    [ "$-" == "*i*" ] && echo "Failed to load bashy: BASHY environment variable is not set"
 fi
