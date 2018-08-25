@@ -1,0 +1,2 @@
+alias disable-gradle-daemon="export GRADLE_OPTS=-Dorg.gradle.daemon=false"
+alias enable-gradle-daemon="unset GRADLE_OPTS"
