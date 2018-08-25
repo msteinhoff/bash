@@ -1,0 +1,8 @@
+dvolume() {
+  local volume volumes_to_list=${1:-$(docker volume ls --quiet)}
+  for volume in $volumes_to_list; do
+    sudo tree "$(docker volume inspect --format '{{ .Mountpoint }}' "$volume")"
+    echo
+  done
+}
+
