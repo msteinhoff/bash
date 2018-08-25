@@ -1,6 +1,0 @@
-export HOMEBREW_NO_ANALYTICS=1
-export HOMEBREW_CASK_OPTS="--require-sha"
-if [ -f $(brew --prefix)/etc/bash_completion ]; then
-    . $(brew --prefix)/etc/bash_completion
-fi
-alias brew-update='brew update && brew upgrade && brew cleanup'

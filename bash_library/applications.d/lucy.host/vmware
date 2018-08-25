@@ -1,3 +1,0 @@
-pathmunge "/Applications/VMware Fusion.app/Contents/Library"
-
-alias cdvmware="cd '/Applications/VMware Fusion.app/Contents/Library'"

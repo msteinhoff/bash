@@ -1,2 +1,0 @@
-# YUI Compressor
-export APP_YUICOMPRESSOR="$DEV/Yahoo-yuicompressor/2.4.6"

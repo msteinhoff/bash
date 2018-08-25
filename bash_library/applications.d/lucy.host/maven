@@ -1,3 +1,0 @@
-# maven is managed by homebrew under /usr/local/bin
-# TODO use project specific config?
-export MAVEN_OPTS="-Xms256m -Xmx512m"

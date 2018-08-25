@@ -1,6 +1,0 @@
-# ant is managed by homebrew under /usr/local/bin
-ANT_APP=$(brew --cellar ant)/1.9.7
-
-complete -C $ANT_APP/complete-ant-cmd.pl ant
-export ANT_HOME=$ANT_APP/libexec
-export ANT_OPTS="-Xmx512M -XX:MaxPermSize=256m"
