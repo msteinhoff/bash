@@ -1,0 +1,6 @@
+alias youngest='echo $(ls -tr | tail -1)' 
+alias less-youngest='less $(youngest)' 
+alias tail-youngest='tail -f $(youngest)'
+
+alias grep-source="grep -nr -I --exclude-dir='(CVS|\.svn|\.git)'"
+alias flatten-current-dir='find . -mindepth 2 -type f -exec mv -t . -i '{}' +'
