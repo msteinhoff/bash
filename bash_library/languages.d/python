@@ -1,5 +1,7 @@
 if which pyenv > /dev/null 2>&1;
 then
+    export PYENV_ROOT="$HOME/.pyenv"
+    pathmunge $PYENV_ROOT/bin
     eval "$(pyenv init -)";
 
     if which pyenv-virtualenv-init > /dev/null 2>&1;

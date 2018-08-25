@@ -1,2 +1,0 @@
-export PYENV_ROOT="$HOME/.pyenv"
-pathmunge $PYENV_ROOT/bin
